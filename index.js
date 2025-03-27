@@ -49,8 +49,10 @@ app.get("/posts/new",(req,res)=>{
 
 app.post("/posts",(req,res)=>{
     let {name, content} = req.body;
-    let id = uuidv4();
-    posts.push({id, name, content});
+    if(name && content){
+        let id = uuidv4();
+        posts.push({id, name, content});
+    }
     //it is used to send a response again
     res.redirect("/posts");
 })
