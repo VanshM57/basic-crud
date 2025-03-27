@@ -1,0 +1,53 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #0077cc;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Post Styling */
+.post {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 60%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.post:hover {
+    transform: scale(1.02);
+}
+
+.user {
+    color: #0077cc;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .post {
+        width: 90%;
+    }
+}
